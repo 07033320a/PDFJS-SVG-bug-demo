@@ -13,7 +13,7 @@ var queryParams = query ? JSON.parse('{' + query.split('&').map(function (a) {
   return a.split('=').map(decodeURIComponent).map(JSON.stringify).join(': ');
 }).join(',') + '}') : {};
 
-var url = queryParams.file || '../../example/test/pdfs/2_Behaviour Change.pdf';
+var url = queryParams.file || '2_Behaviour Change.pdf';
 var scale = +queryParams.scale || 1.5;
 
 //

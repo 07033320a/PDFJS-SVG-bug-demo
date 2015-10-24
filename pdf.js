@@ -221,7 +221,7 @@ function info(msg) {
 // Non-fatal warnings.
 function warn(msg) {
   if (PDFJS.verbosity >= PDFJS.VERBOSITY_LEVELS.warnings) {
-    //console.log('Warning: ' + msg);
+    console.log('Warning: ' + msg);
   }
 }
 
@@ -8019,7 +8019,7 @@ var SVGGraphics = (function SVGGraphicsClosure() {
       if (isArray(bbox) && bbox.length === 4) {
         var width = bbox[2] - bbox[0];
         var height = bbox[3] - bbox[1];
-        //if (height < 0) height = -height;
+
         var cliprect = document.createElementNS(NS, 'svg:rect');
         cliprect.setAttributeNS(null, 'x', bbox[0]);
         cliprect.setAttributeNS(null, 'y', bbox[1]);
@@ -8051,6 +8051,8 @@ if (!PDFJS.workerSrc && typeof document !== 'undefined') {
     var scriptTagContainer = document.body ||
                              document.getElementsByTagName('head')[0];
     var pdfjsSrc = scriptTagContainer.lastChild.src;
-    return pdfjsSrc && pdfjsSrc.replace(/.js$/, ".worker.js");
+    return pdfjsSrc && pdfjsSrc.replace(/\.js$/i, '.worker.js');
   })();
 }
+
+

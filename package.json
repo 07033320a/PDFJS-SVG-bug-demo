@@ -1,0 +1,27 @@
+{
+  "name": "bugdemo",
+  "version": "0.0.1",
+  "description": "fun",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "^3.4.0",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuzhen2008/PDFJS-SVG-bug-demo.git"
+  },
+  "keywords": [
+    "bug"
+  ],
+  "author": "liuzhen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuzhen2008/PDFJS-SVG-bug-demo/issues"
+  },
+  "homepage": "https://github.com/liuzhen2008/PDFJS-SVG-bug-demo#readme"
+}
